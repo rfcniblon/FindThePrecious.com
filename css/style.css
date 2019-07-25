@@ -1,75 +1,151 @@
-body{
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    font-family:  Impact, "Arial Black", Arial, Verdana, sans-serif;
-    font-size: 20px;
-    font-style: unset;
-   /* background-size: 100%; */
-  /*  margin:0 auto;
-    width: 1000px;
-    font-family: 'Poor Story', cursive;
-    font-size: 20px;
-    font-style: unset;*/
+body {
+	font-family: Arial;
 }
-h1, h2, h3{
-    font-family: Impact, "Arial Black", Arial, Verdana, sans-serif ;
-    margin: auto;
-    margin-bottom: 50px;
-    margin-top: 20px;
-  }
-  
-  /* ---- NAVIGATION --- */
- 
-  nav{
-    font-family:  Impact, "Arial Black", Arial, Verdana, sans-serif;
-    background-color: rgba(150, 150, 150, 0.8);
-    color : blueviolet;
-    border-radius: 5px;
-  }
-  nav ul {
-    list-style-type: none;
-    display: flex;
-    border-radius: 5px;
-    border-color: rgb(90, 91, 92) ;
-    border-style: solid;
-  }
-  nav li {
-    list-style-type: none;
-    text-transform: uppercase;
-    font-size: 20px;
-    margin: auto;
-    padding: 15px 0px 15px 0;
-  }
-  /* supprime les traits sous les liens et les mets en noir*/
-  nav li a{
-    text-decoration: none;
-    color: black;
-  }
-  /* ---- SECTION ---- */
-  
-  section {
-    background-color: rgba(150, 150, 150, 0.8);
-    border-radius: 5px;
-    border-color: rgb(90, 91, 92) ;
-    border-style: solid;
-    padding: 20px;
-  }
-  section ul{
-    list-style-type: none;
-    display:flex;
-    margin-left: -20px;
-  }
-  
-  section li{
-    background-color: rgba(0,0,0,0.8);
-    border: 2px black solid;
-    border-radius: 3%;
-    margin: 0px 10px 0px 0px;
-    padding: 0px 10px 0px 10px;
-    color: white;
-    font-size: 20px;
-  }
-  .photo_section{
-      align-content: center;
-      
-  }
+h1 {
+	font-weight: bold;
+	font-size: 2em;
+	margin: auto 0px;
+}
+.navbar {
+	height: auto;
+	margin-top: 10px;
+} 
+.nav-item {
+	margin: auto 20px;
+}
+.wanted_poster {
+	width: 300px;
+	margin: 10px;
+	border: 1px solid darkgray;
+	border-radius: 5px 5px;
+}
+/* CSS for the information block*/
+.wanted_info {
+	padding: 20px;
+	position: relative;
+	top: -340px;
+	height: 340px;
+	width: 300px;
+}
+.wanted_info p  {
+	font-size: 2em;
+	background-color: rgba(255,255,255,0.8);
+	border-radius: 15px;
+	text-align: center;
+	padding: 10px;
+}
+em {
+	color: orange;
+	font-style: normal;
+}
+
+.em_red {
+	color: red;
+	font-style: normal;
+	text-decoration:line-through;	
+}
+h5 {
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+.d-block {
+	height: 400px;
+}
+.carousel {
+	margin-bottom: 3rem;
+	height: 70%;
+}
+.carousel-caption, .carousel-caption h5 {
+	color: white;
+	text-shadow: 2px 2px 2px gray;
+	padding-bottom: 0px;
+}
+/*h2, h3 {
+	text-align: center;
+}*/
+.col-4 {
+	width: 10rem;
+}
+.col-lg-4 {
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	max-width: 400px;
+}
+.row {
+	display: flex;
+	justify-content: center;
+}
+.wanted-cache {
+	height: 340px;
+	overflow: hidden;
+}
+.wanted-img {
+	height: 340px;
+	filter: opacity(50%);
+	-webkit-filter: opacity(50%);
+}
+.wanted-img:hover {
+	filter: opacity(100%);
+	-webkit-filter: opacity(100%);
+}
+/*Hide the information block*/
+.wanted-cache:hover .wanted_info{
+	visibility: hidden;
+}
+footer {
+	background-color: black;
+	color: white;
+	padding-top: 10px;
+	margin-top: 10px;
+}
+footer ul {
+	list-style-type: none;
+}
+footer a {
+	color: white;
+}
+p {
+	text-align: justify;
+	margin-bottom: 5px;
+}
+.col-6 {
+	display: flex;
+	justify-content: space-around;
+}
+.col-lg-2 {
+	margin-bottom: 10px;
+	display: flex;
+	justify-content: center;
+}
+.form {
+	margin: 5px;
+	padding: 0px;
+	display: flex;
+	justify-content: center;
+}
+.col-2 {
+	max-width: none;
+}
+.col-sm-12 {
+	margin-bottom: 2rem;
+}
+.pills {
+	max-width: 200px;
+}
+.badge {
+	width: 9rem;
+	height: 2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+/*tableau css*/
+table {
+	text-align: center;
+}
+/* arrondi de l'image gollum*/
+.img_gollum {
+	border-radius: 50%;
+ }
